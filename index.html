@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkateTrace — Sessions</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="phone">
+
+  <div class="status-bar">
+    <span>9:41</span>
+    <span>SkateTrace</span>
+  </div>
+
+  <header class="app-head">
+    <p class="eyebrow">Ella R. · Level 4</p>
+    <h1>Sessions</h1>
+  </header>
+
+  <main>
+
+    <!-- START A NEW SESSION -->
+    <a class="cta" href="session-detail.html">
+      <span class="dot">●</span>
+      <span>
+        <span class="title">Start new session</span>
+        <span class="meta">Both sensors connected · ready to record</span>
+      </span>
+    </a>
+
+    <!-- HARDWARE STATUS -->
+    <div class="devices">
+      <div class="device">
+        <div class="name">Skate module</div>
+        <div class="state ok">Connected · 84%</div>
+        <div class="state">Ice temp + IMU</div>
+      </div>
+      <div class="device">
+        <div class="name">Blade unit</div>
+        <div class="state ok">Connected · 71%</div>
+        <div class="state">GPS + IMU</div>
+      </div>
+    </div>
+
+    <!-- RECENT SESSIONS -->
+    <div class="section-head">
+      <h2>Recent</h2>
+      <a href="manage-sessions.html">Manage</a>
+    </div>
+
+    <div class="session-list">
+
+      <a class="session-row current" href="session-detail.html">
+        <svg class="thumb" viewBox="0 0 60 60" aria-hidden="true">
+          <rect class="rink-face rink-line" x="3" y="3" width="54" height="54" rx="18"/>
+          <path class="path-outside" d="M18 46 C 10 32, 16 16, 30 14 S 50 24, 44 40"
+                fill="none" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="body">
+          <span class="name">Tuesday Practice <span class="badge live">recording</span></span>
+          <span class="when">Today · 4:15 PM · Cottonwood Rink</span>
+          <span class="stats"><b>42</b> min · <b>18</b> jumps · <b>7</b> laps</span>
+        </span>
+        <span class="chev">›</span>
+      </a>
+
+      <a class="session-row" href="session-detail.html">
+        <svg class="thumb" viewBox="0 0 60 60" aria-hidden="true">
+          <rect class="rink-face rink-line" x="3" y="3" width="54" height="54" rx="18"/>
+          <path class="path-outside" d="M16 40 C 14 20, 30 10, 42 20 S 44 44, 26 46"
+                fill="none" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="body">
+          <span class="name">Saturday Freestyle</span>
+          <span class="when">Sat, Aug 30 · 8:00 AM · Cottonwood Rink</span>
+          <span class="stats"><b>55</b> min · <b>24</b> jumps · <b>11</b> laps</span>
+        </span>
+        <span class="chev">›</span>
+      </a>
+
+      <a class="session-row" href="session-detail.html">
+        <svg class="thumb" viewBox="0 0 60 60" aria-hidden="true">
+          <rect class="rink-face rink-line" x="3" y="3" width="54" height="54" rx="18"/>
+          <path class="path-outside" d="M20 48 C 8 34, 18 14, 34 16 S 48 34, 38 46"
+                fill="none" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="body">
+          <span class="name">Edge Drills <span class="badge unsynced">not synced</span></span>
+          <span class="when">Thu, Aug 28 · 5:30 PM · Cottonwood Rink</span>
+          <span class="stats"><b>31</b> min · <b>4</b> jumps · <b>9</b> laps</span>
+        </span>
+        <span class="chev">›</span>
+      </a>
+
+      <a class="session-row" href="session-detail.html">
+        <svg class="thumb" viewBox="0 0 60 60" aria-hidden="true">
+          <rect class="rink-face rink-line" x="3" y="3" width="54" height="54" rx="18"/>
+          <path class="path-outside" d="M14 36 C 20 16, 40 12, 46 28 S 30 52, 20 44"
+                fill="none" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="body">
+          <span class="name">Tuesday Practice</span>
+          <span class="when">Tue, Aug 26 · 4:15 PM · Cottonwood Rink</span>
+          <span class="stats"><b>44</b> min · <b>16</b> jumps · <b>8</b> laps</span>
+        </span>
+        <span class="chev">›</span>
+      </a>
+
+      <a class="session-row" href="session-detail.html">
+        <svg class="thumb" viewBox="0 0 60 60" aria-hidden="true">
+          <rect class="rink-face rink-line" x="3" y="3" width="54" height="54" rx="18"/>
+          <path class="path-outside" d="M22 46 C 12 30, 20 14, 34 18 S 46 38, 32 48"
+                fill="none" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="body">
+          <span class="name">Competition Warm-up</span>
+          <span class="when">Sun, Aug 24 · 7:00 AM · Provo Ice</span>
+          <span class="stats"><b>26</b> min · <b>11</b> jumps · <b>5</b> laps</span>
+        </span>
+        <span class="chev">›</span>
+      </a>
+
+    </div>
+
+    <!-- STORAGE / SYNC -->
+    <section class="card">
+      <h2>On This Phone</h2>
+      <div class="storage-bar"><span></span></div>
+      <div class="sub" style="margin-top:0">
+        14 sessions stored · 1 waiting to sync
+      </div>
+      <div class="row-actions">
+        <button>Sync now</button>
+        <button>Export all</button>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="tabs">
+    <a href="index.html" class="active"><span class="icon">◉</span>Sessions</a>
+    <a href="blade-path.html"><span class="icon">⤳</span>Blade Path</a>
+    <a href="progress.html"><span class="icon">▤</span>Progress</a>
+    <a href="#"><span class="icon">⚙</span>Settings</a>
+  </nav>
+
+</div>
+</body>
+</html>
